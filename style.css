@@ -1,0 +1,249 @@
+body {
+
+	min-height:1250px;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100%;
+}	
+
+.highlight {
+	background-color: red;
+}
+
+/*--------------------------TABLE FORMAT----------------------------*/
+
+.zebra td, .zebra th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;    
+}
+
+.zebra tbody tr:nth-child(even) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+}
+
+.zebra th {
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #eee);
+    background-image:    -moz-linear-gradient(top, #f5f5f5, #eee);
+    background-image:     -ms-linear-gradient(top, #f5f5f5, #eee);
+    background-image:      -o-linear-gradient(top, #f5f5f5, #eee); 
+    background-image:         linear-gradient(top, #f5f5f5, #eee);
+}
+
+.zebra th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;  
+}
+
+.zebra th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.zebra tfoot td {
+    border-bottom: 0;
+    border-top: 1px solid #fff;
+    background-color: #f1f1f1;  
+}
+
+.zebra tfoot td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.zebra tfoot td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+/*---------------------END OF TABLE FORMAT----------------------------------------*/
+
+.del
+{
+border-collapse:collapse;
+border:1px solid black;
+text-align:center;
+height:30px;
+background-color:#C0C0C0;
+}
+
+a {color:#000000;}      /* unvisited link */
+a:visited {color:#000000;}  /* visited link */
+a:hover {color:blue;}  /* mouse over link */
+a:active {color:blue;}  /* selected link */
+
+
+.fixed {
+top: 0px;
+position: fixed;
+left: 0;
+height: 40px;
+width: 100%;
+margin: 0;
+background-color:#719BEB;
+box-shadow:1px 1px 3px 3px grey;
+z-index: 1;
+
+}
+
+.footer {
+
+height: 150px;
+width: 100%;
+
+}
+
+.view {
+
+width: 1000px;
+position: absolute;
+top: 25%;
+left: 50%;
+margin-left: -500px;
+}
+
+.add {
+
+width: 300px;
+position: absolute;
+top: 20%;
+left: 50%;
+margin-left: -150px;
+}
+
+.search {
+
+width: 500px;
+position: absolute;
+top: 15%;
+left: 50%;
+margin-left: -300px;
+}
+
+
+.submit {
+
+position: fixed;
+left: 50%;
+margin-left: -20px;
+
+}
+
+
+.admin {
+
+width: 200px;
+position: fixed;
+top: 15%;
+left: 50%;
+margin-left: -100px;
+}
+
+.hint {
+
+margin-top: 50px;
+
+}
+
+    
+<!------------MENU--------------------> 
+    
+ul.menu {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+    background-repeat: no-repeat;
+	width: 900px;
+}
+
+ul.menu li {
+	float: left;
+	list-style: none;
+	width: 150px;
+	border-right: 1px solid #4f4f4f;
+	position: relative;
+}
+
+ul.menu li:first-child {
+	
+	border-left: 1px solid #4f4f4f;
+	
+}
+
+
+ul.menu li:last-child {
+	float: right;
+    border-left: 1px solid #4f4f4f;
+}
+
+ul.menu li a {
+	color: white;
+	display: block;
+	font-family: Arial;
+	font-size: 16px;
+	padding: 12px 20px 10px;
+	text-align:center;
+	text-decoration: none;
+	/*border-right: 1px solid #2b2b2b;*/
+}
+
+ul.menu li a:hover {
+	background-color: #2b2b2b;
+}
+
+
+/*drop down menu*/
+ul.menu li ul {
+	display: none;
+	
+}
+
+ul.menu li:hover ul {
+	display: block;
+	position: absolute;
+	top: 40px;
+	background-color: #719BEB;
+	z-index: 1000;
+}
+
+ul.menu li:hover ul li {
+	float: none;
+	width: 150px;
+	border-right: none;
+}
+
+ul.menu li:hover ul li a {
+	border-top: 1px solid #4f4f4f;
+	border-right: none;
+	padding: 6px 20px 8px;
+	
+}
+
+ul.menu li:hover ul li a:hover {
+	background-color: transparent;
+	color: #c1deff;
+	background-color: #2b2b2b;
+}
+
+ul.menu li:hover ul li:first-child a:hover {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+/*-------------------------END OF MENU ----------------------------------*/
+
+
