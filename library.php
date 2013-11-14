@@ -66,7 +66,7 @@ class Db_link {
   private $link;
   private $result;
   public function __construct ($database_name) {
-   $link = mysqli_connect ("localhost", "cfconcrcom_smart", "Pass4smart", $database_name) or die('Could not connect: ' . mysqli_error($link));
+   $link = mysqli_connect ("VH85.spaceweb.ru", "cfconcrcom_smart", "Pass4smart", $database_name) or die('Could not connect: ' . mysqli_error($link));
    $this -> link = $link;
    }
 
